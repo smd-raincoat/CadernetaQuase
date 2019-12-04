@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Validators, FormBuilder, FormGroup} from '@angular/forms'
 import {dataProvider} from "../../providers/data/data";
 import {HomePage} from '../home/home'
+import { ListcheckPage } from '../listcheck/listcheck';
 
 
 
@@ -82,6 +83,10 @@ export class CadastroViagemPage {
 
   goHome(){
     this.navCtrl.pop();
+  }
+
+  goChecklist(){
+    this.navCtrl.push(ListcheckPage);
   }
 
 }
